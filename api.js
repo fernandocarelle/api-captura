@@ -16,9 +16,9 @@ app.get('/', (req, res, next) => {
 app.post('/send', upload.single('anexo'), (req, res, next) => { 
     const nome = req.body.nome;
     const email = req.body.email;
-    const mensagem = req.body.mensagem;
+    const telefone = req.body.telefone;
     const anexo = req.file;
-    require("./nodemail")(email, nome, mensagem, anexo)
+    require("./nodemail")(email, nome, telefone, anexo)
         .then(response => res.json(response))
         .catch(error => res.json(error));
 })
