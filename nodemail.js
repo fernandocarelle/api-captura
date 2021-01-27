@@ -16,7 +16,7 @@ module.exports = (email, nome, telefone, anexo) => {
         from: "contato@divasbeleza.com.br",
         to: email,
         replyTo: "contato@divasbeleza.com.br",
-        subject: `${nome} , segue um vale desconto do Diva's`,
+        subject: `${nome} , segue um vale desconto do Divas`,
         /* text: mensagem, */
         html: `<!doctype html>
         <html>
